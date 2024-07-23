@@ -1,5 +1,16 @@
 const draggables = document.querySelectorAll(".draggable");
 const containers = document.querySelectorAll(".container");
+const captureBtn = document.getElementById('capture-btn');
+
+captureBtn.addEventListener('click', () => {
+    const rankingTable = document.querySelector('.ranking-table');
+    html2canvas(rankingTable).then(canvas => {
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = 'ranking-table.png';
+        link.click();
+    });
+});
 
 draggables.forEach(draggable => {
   draggable.addEventListener("dragstart", () => {
