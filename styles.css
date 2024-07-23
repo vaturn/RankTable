@@ -5,22 +5,13 @@ body {
     display: flex;
   }
   
-  button {
-    width: 70px;
-    height: 70px;
-    border: none;
-    border-radius: 8px;
-    margin: 12px;
-    cursor: move;
-    font-size: 30px;
-    background: #eaeaea4f;
-  }
-  
   .container {
     margin: 10px;
     padding: 10px;
     background-color: #b5c1dc57;
     border-radius: 8px;
+    min-height: 100px;
+    min-width: 10px;
   }
   
   .draggable.dragging {
@@ -59,12 +50,14 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #b5c1dc57;
+    min-width: 550px;
 }
 
 .row {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    height: 150px;
 }
 
 .rank {
