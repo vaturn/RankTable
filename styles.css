@@ -64,7 +64,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    height: 150px;
+    min-height: 150px;
 }
 
 .rank {
